@@ -50,7 +50,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_product.mk)
 #
 # Special settings for GSI releasing
 #
-$(call inherit-product, $(SRC_TARGET_DIR)/product/legacy_gsi_release.mk)
+#$(call inherit-product, $(SRC_TARGET_DIR)/product/legacy_gsi_release.mk)
+# DynaROM: we only support Android 10/Q+
+$(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_release_qplus.mk)
 
 PRODUCT_NAME := aosp_arm64_ab
 PRODUCT_DEVICE := generic_arm64_ab
