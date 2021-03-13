@@ -58,3 +58,6 @@ PRODUCT_PACKAGES += \
 #PRODUCT_EXTRA_VNDK_VERSIONS := 28 29
 # DynaROM: we only support Android 10/Q+
 PRODUCT_EXTRA_VNDK_VERSIONS := 29
+# DynaROM: Extra legacy stuff for Phh-Treble
+# TODO: Check out https://sx.ix5.org/info/treble-properties/ - I think when this is true, all of the "Access denied finding property" things need to be whitelisted
+PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := false
